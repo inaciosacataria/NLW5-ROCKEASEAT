@@ -15,7 +15,7 @@ class Message{
     text: string;
 
     @CreateDateColumn()
-    created_at: Date;
+    create_at: Date;
 
     @JoinColumn({name: "user_id"})
     @ManyToOne(()=>User)
